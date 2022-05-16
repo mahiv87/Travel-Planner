@@ -1,10 +1,25 @@
 const router = require('express').Router();
+// const req = require('express/lib/request');
 const { Traveller, Trip, Location } = require('../../models');
 
 router.get('/', async (req, res) => {
     try {
         const tripData = await Trip.findAll();
         res.status(200).json(tripData);
+    } catch (error) {
+        res.status(500).json(error)
+    }
+})
+
+router.get('/:id', async (req, res) => {
+    try {
+        const tripData = await Trip.findByPk(req.params.id)
+
+        if (!tripData) {
+            res.status(404).json({ message: 'No trip found with this id'})
+        }
+
+        res.status(200).json(tripData)
     } catch (error) {
         res.status(500).json(error)
     }
