@@ -26,21 +26,57 @@ API to create trips, locations, and travellers to help plan a trip
 - MySQL
 - Sequelize
 - dotenv
+- Heroku
 
 
 ## Installation
 
-Clone the repository
+No installation required
 
 ## Usage
 
-Install dependencies ```npm i``` 
+Use Heroku deployment for API request 
+`https://enigmatic-plains-36234.herokuapp.com/api/travellers`
 
-Source database from ```db/schema.sql``` 
+GET, and DELETE request for a single Traveller `/api/travellers/"traveller_id"`
 
-Seed data from ```seeds``` folder ```node seed.js``` 
+Use the following sample data as the request body POST `/api/travellers` route:
 
-Start server ```npm start```
+  ```json
+  {
+    "name": "Marcus",
+    "email": "maherreraiv1987@gmail.com"
+  }
+  ```
+
+`https://enigmatic-plains-36234.herokuapp.com/api/locations`
+
+GET, and DELETE request for a single Location `/api/travellers/"location_id"`
+
+Use the following sample data as the request body POST `/api/locations` route:
+
+  ```json
+  {
+    "location_name": "Denver"
+  }
+  ```
+
+`https://enigmatic-plains-36234.herokuapp.com/api/trips`
+
+GET, and DELETE request for a single Trip `/api/travellers/"trip_id"`
+
+Use the following sample data as the request body POST `/api/trips` route:
+
+  ```json
+  {
+    "trip_budget": 2000.50,
+    "traveller_amount": 6,
+    "traveller_id": 1,
+    "location_id": 1
+  }
+  ```
+
+  View associated Trips with a Traveller `/api/travellers/"traveller_id"`
 
 ## License
 
