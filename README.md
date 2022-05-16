@@ -51,7 +51,7 @@ Use the following sample data as the request body POST `/api/travellers` route:
 
 `https://enigmatic-plains-36234.herokuapp.com/api/locations`
 
-GET, and DELETE request for a single Location `/api/travellers/"location_id"`
+GET, and DELETE request for a single Location `/api/locations/"location_id"`
 
 Use the following sample data as the request body POST `/api/locations` route:
 
@@ -63,7 +63,7 @@ Use the following sample data as the request body POST `/api/locations` route:
 
 `https://enigmatic-plains-36234.herokuapp.com/api/trips`
 
-GET, and DELETE request for a single Trip `/api/travellers/"trip_id"`
+GET, and DELETE request for a single Trip `/api/trips/"trip_id"`
 
 Use the following sample data as the request body POST `/api/trips` route:
 
