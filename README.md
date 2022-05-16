@@ -35,8 +35,8 @@ No installation required
 
 ## Usage
 
-Use Heroku deployment for API request 
-`https://enigmatic-plains-36234.herokuapp.com/api/travellers`
+Use Heroku deployment for API request
+````https://enigmatic-plains-36234.herokuapp.com/api/travellers````
 
 GET, and DELETE request for a single Traveller `/api/travellers/"traveller_id"`
 
